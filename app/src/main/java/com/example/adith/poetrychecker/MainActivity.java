@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void btnOnClick(View v) {
-        final TextView txt = findViewById(R.id.txtid);
+        final TextView txt = findViewById(R.id.poemInput);
         new Thread(new Runnable() {
             @Override
             public void run() {

@@ -10,7 +10,9 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="27dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="3dp"
         android:text="Enter Poem Type and Poem Below to Check"
         android:textAlignment="center"
@@ -27,25 +29,30 @@
         android:id="@+id/poemInput"
         android:layout_width="360dp"
         android:layout_height="331dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="290dp"
         android:ems="10"
         android:hint="Enter your poem here, but seperate each line with an empty line in this box"
         android:inputType="textMultiLine"
         android:textAlignment="viewStart"
         app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/poemType"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/poemType"
         android:layout_width="371dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="369dp"
         android:entries="@array/poem_types"
         app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
