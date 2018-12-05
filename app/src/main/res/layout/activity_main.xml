@@ -7,22 +7,63 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="3dp"
+        android:text="Enter Poem Type and Poem Below to Check"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/poemType"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/poemInput"
+        android:layout_width="360dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="290dp"
+        android:ems="10"
+        android:hint="Enter your poem here, but seperate each line with an empty line in this box"
+        android:inputType="textMultiLine"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/poemType"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Spinner
+        android:id="@+id/poemType"
+        android:layout_width="371dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="369dp"
+        android:entries="@array/poem_types"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="btnOnClick"
-        android:text="Button"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Submit Poem"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poemType" />
 
 </android.support.constraint.ConstraintLayout>
