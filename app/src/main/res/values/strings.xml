@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">PoetryChecker</string>
+    <string name="app_name">finalProjectUI</string>
+    <string-array name="poem_types">
+        <item>Haiku</item>
+        <item>Couplet</item>
+        <item>Quatrain</item>
+        <item>Shakespearean Sonnet</item>
+    </string-array>
 </resources>
