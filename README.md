@@ -3,7 +3,7 @@
 ### To-Do
 
 - [x] Find out how to get data from API
-- [ ] Make frontend
+- [x] Make frontend
 - [ ] Interact with data
 
 ### Details
