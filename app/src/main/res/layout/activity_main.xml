@@ -34,9 +34,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="290dp"
         android:ems="10"
-        android:hint="Enter your poem here, but seperate each line with an empty line in this box"
+        android:hint="Enter your poem here"
         android:inputType="textMultiLine"
-        android:textAlignment="viewStart"
+        android:singleLine="false"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,6 +64,7 @@
         android:layout_marginBottom="20dp"
         android:background="@color/colorPrimary"
         android:gravity="center"
+        android:onClick="btnOnClick"
         android:text="Submit Poem"
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -72,5 +74,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/poemType" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </android.support.constraint.ConstraintLayout>
