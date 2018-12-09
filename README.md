@@ -4,7 +4,7 @@
 
 - [x] Find out how to get data from API
 - [x] Make frontend
-- [ ] Interact with data
+- [x] Interact with data
 
 ### Details
 
