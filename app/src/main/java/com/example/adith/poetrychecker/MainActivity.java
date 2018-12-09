@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void btnOnClick(View v) {
         final TextView txt = findViewById(R.id.poemInput);
-        String poemIn = txt.getText().toString();
+        String poemIn = txt.getText().toString().toLowerCase();
         final String[][] poemArray = stringArray(poemIn);
         final Spinner spin = findViewById(R.id.poemType);
         final String poemType = spin.getSelectedItem().toString();
